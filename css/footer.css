@@ -1,0 +1,150 @@
+body
+{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container
+{
+	max-width: 1170px;
+	margin:auto;
+}
+
+/*here we make them align horizontally instead of vertically */
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* This list style removes the point form labeling. Inatoa hizo circles before each listed item */
+ul
+{
+	list-style: none;
+}
+
+/* Sets the background colour and spacing */
+.footer{
+	/* From https://css.glass */
+	background-color: rgba(255, 255, 255, 0.074);
+	border: none;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	border-radius: .7rem;
+	transition: all ease .3s;
+}
+
+/* The following gives space between each list horizontally to separate them */
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+ }
+
+ /* Hapa we set the font color size and weight of the h4- headings we wrote ealier */
+ .footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+ /* This code adds the pink line below the h4 headings */
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+ /*  /* Hapa we set the font color size and weight of the h4- headings we wrote ealier */
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.new
+{
+    font-size: 16px;
+    text-transform: capitalize; /* Capitalize text */
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* No text decoration */
+    font-weight: 300; /* Light font weight */
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-col ul li a:hover
+{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.new li:hover
+{
+	color: #ffffff;
+	padding-left: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links a{
+	display: flexbox;
+	padding: 10px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
+  @media(max-width: 767px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+
+

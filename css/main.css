@@ -1,0 +1,162 @@
+.row
+{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col
+{
+    /* Sets column width to 50% */
+    flex-basis: 50%;
+}
+
+h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+}
+p
+{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-bottom: 2rem;
+    color: antiquewhite;
+}
+
+.card
+{
+    max-width: fit-content;
+    height: 230px;
+    display: inline-block; /* aligns the cards cards in block form */
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s; /* works hand in hand with the transform function below slowing it down to 0.5seconds */
+}
+
+/* set card1 background image */
+.card1
+{
+    background-image: url(/img/pc.png);
+}
+
+/* set card2 background image */
+.card2
+{
+    background-image: url(/img/phone.jpeg);
+}
+
+/* set card3 background image */
+.card3
+{
+    background-image: url(/img/headphones.png);
+}
+
+/* Hover effect: translate card upwards. Hapa when you hover around the card it moves upwards */
+.card:hover
+{
+    transform: translateY(-10px);
+}
+
+/* here we make the h5 or headings more distinct by editing the size and colour of font makig i more visible */
+h5
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+}
+
+.card p
+{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-bottom: 2rem;
+    color: antiquewhite;
+}
+
+
+
+
+/* For small devices */
+@media (max-width: 480px) {
+    .row {
+       flex-direction: column;
+    }
+   
+    .col {
+       flex-basis: 100%;
+    }
+   
+    h1 {
+       font-size: 2rem;
+    }
+   
+    p {
+       font-size: 10px;
+    }
+   
+    .card {
+       width: 100%;
+       height: auto;
+    }
+   }
+   
+   /* For medium devices */
+   @media (min-width: 481px) and (max-width: 768px) {
+    .row {
+       flex-direction: column;
+    }
+   
+    .col {
+       flex-basis: 100%;
+    }
+   
+    h1 {
+       font-size: 2.5rem;
+    }
+   
+    p {
+       font-size: 11px;
+    }
+   
+    .card {
+       width: 100%;
+       height: auto;
+    }
+   }
+   
+   /* For large devices */
+   @media (min-width: 769px) {
+    .row {
+       flex-direction: row;
+    }
+   
+    .col {
+       flex-basis: 50%;
+    }
+   
+    h1 {
+       font-size: 3rem;
+    }
+   
+    p {
+       font-size: 11px;
+    }
+   
+    .card {
+       width: 200px;
+       height: 230px;
+    }
+   }
